@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Slideshow</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; }
+
+    .slideshow-container {
+      position: relative;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .slide {
+  display: none;
+  width: 100%;
+  position: relative;
+}
+
+   img {
+  width: 100%;
+  height: auto;
+  min-height: 200px; /* fallback height */
+}
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+
+    .caption {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+  </style>
+</head>
+<body>
+
+
+
+    <p>hiii</p>
+<div class="slideshow-container" id="slideshow1">
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Backpack.jpg" alt="Slide 1">
+    <div class="caption">Day 1 Prompt: Backpack</div>
+  </div>
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Discover.jpg" alt="Slide 2">
+    <div class="caption">Day 2 Prompt: Discover</div>
+  </div>
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Boots.jpg" alt="Slide 3">
+    <div class="caption">Day 3 Prompt: Boots</div>
+
+  </div>
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Exotic.jpg" alt="Slide 4">
+    <div class="caption">Day 4 Prompt: Exotic</div>
+  </div>
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Binoculars.jpg" alt="Slide 5">
+    <div class="caption">Day 5 Prompt: Binoculars</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Trek.jpg" alt="Slide 6">
+    <div class="caption">Day 6 Prompt: Trek</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Passport.jpg" alt="Slide 7">
+    <div class="caption">Day 7 Prompt: Passport</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Hike.jpg" alt="Slide 8">
+    <div class="caption">Day 8 Prompt: Hike</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Sun.jpg" alt="Slide 9">
+    <div class="caption">Day 9 Prompt: Sun</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Nomadic.jpg" alt="Slide 10">
+    <div class="caption">Day 10 Prompt: Nomadic</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Snacks.jpg" alt="Slide 11">
+    <div class="caption">Day 11 Prompt: Snacks</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Remote.jpg" alt="Slide 12">
+    <div class="caption">Day 12 Prompt: Remote</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Horizon.jpg" alt="Slide 13">
+    <div class="caption">Day 13 Prompt: Horizon</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Roam.jpg" alt="Slide 14">
+    <div class="caption">Day 14 Prompt: Roam</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Guidebook.jpg" alt="Slide 15">
+    <div class="caption">Day 15 Prompt: Guidebook</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Grungy.jpg" alt="Slide 16">
+    <div class="caption">Day 16 Prompt: Grungy</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Journal.jpg" alt="Slide 17">
+    <div class="caption">Day 17 Prompt: Journal</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Drive.jpg" alt="Slide 18">
+    <div class="caption">Day 18 Prompt: Drive</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Ridge.jpg" alt="Slide 19">
+    <div class="caption">Day 19 Prompt: Ridge</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Uncharted.jpg" alt="Slide 20">
+    <div class="caption">Day 20 Prompt: Uncharted</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Rhinoceros.jpg" alt="Slide 21">
+    <div class="caption">Day 21 Prompt: Rhinoceros</div>
+  </div>
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Camp.jpg" alt="Slide 22">
+    <div class="caption">Day 22 Prompt: Camp</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Rust.jpg" alt="Slide 23">
+    <div class="caption">Day 23 Prompt: Rust </div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Expedition.jpg" alt="Slide 24">
+    <div class="caption">Day 24 Prompt: Expedition</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Scarecrow.jpg" alt="Slide 25">
+    <div class="caption">Day 25 Prompt: Scarecrow</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Camera.jpg" alt="Slide 26">
+    <div class="caption">Day 26 Prompt: Camera</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Road.jpg" alt="Slide 27">
+    <div class="caption">Day 27 Prompt: Road</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Jumbo.jpg" alt="Slide 28">
+    <div class="caption">Day 28 Prompt: Jumbo</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Navigation.jpg" alt="Slide 29">
+    <div class="caption">Day 29 Prompt: Navigator</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Violin.jpg" alt="Slide 30">
+    <div class="caption">Day 30 Prompt: Violin</div>
+  </div>
+
+   
+  <div class="slide">
+    <img src="Inktober_2024_img/Inktober_Landmark.jpg" alt="Slide 31">
+    <div class="caption">Day 31 Prompt: Landmark</div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1, 'slideshow1')">❮</a>
+  <a class="next" onclick="plusSlides(1, 'slideshow1')">❯</a>
+
+</div>
+
+<br><br><br>
+
+<div class="slideshow-container" id="slideshow2">
+
+
+ 
+<!--THIS IS BROKEN-->
+
+
+<div class="slideshow-container" id="slideshow2">
+
+    
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Mustache.jpg" alt="Slide 1">
+    <div class="caption">Day 1 Prompt: Mustache</div>
+
+  </div>
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Weave.jpg" alt="Slide 2">
+    <div class="caption">Day 2 Prompt: Weave</div>
+  </div>
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Crown.jpg" alt="Slide 3">
+    <div class="caption">Day 3 Prompt: Crown</div>
+
+  </div>
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Murky.jpg" alt="Slide 4">
+    <div class="caption">Day 4 Prompt: Murky</div>
+  </div>
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Deer.jpg" alt="Slide 5">
+    <div class="caption">Day 5 Prompt: Deer</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Pierce.jpg" alt="Slide 6">
+    <div class="caption">Day 6 Prompt: Pierce</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Starfish.jpg" alt="Slide 7">
+    <div class="caption">Day 7 Prompt: Starfish</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Reckless.jpg" alt="Slide 8">
+    <div class="caption">Day 8 Prompt: Reckless</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Heavy.jpg" alt="Slide 9">
+    <div class="caption">Day 9 Prompt: Heavy</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Sweep.jpg" alt="Slide 10">
+    <div class="caption">Day 10 Prompt: Sweep</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Sting.jpg" alt="Slide 11">
+    <div class="caption">Day 11 Prompt: Sting</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Shredded.jpg" alt="Slide 12">
+    <div class="caption">Day 12 Prompt: Shredded</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Drink.jpg" alt="Slide 13">
+    <div class="caption">Day 13 Prompt: Drink</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Trunk.jpg" alt="Slide 14">
+    <div class="caption">Day 14 Prompt: Trunk</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Ragged.jpg" alt="Slide 15">
+    <div class="caption">Day 15 Prompt: Ragged</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Blunder.jpg" alt="Slide 16">
+    <div class="caption">Day 16 Prompt: Blunder</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Ornate.jpg" alt="Slide 17">
+    <div class="caption">Day 17 Prompt: Ornate</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Deal.jpg" alt="Slide 18">
+    <div class="caption">Day 18 Prompt: Deal</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Arctic.jpg" alt="Slide 19">
+    <div class="caption">Day 19 Prompt: Arctic</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Rivals.jpg" alt="Slide 20">
+    <div class="caption">Day 20 Prompt: Rivals</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Blast.jpg" alt="Slide 21">
+    <div class="caption">Day 21 Prompt: Blast</div>
+  </div>
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Button.jpg" alt="Slide 22">
+    <div class="caption">Day 22 Prompt: Button</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Firefly.jpg" alt="Slide 23">
+    <div class="caption">Day 23 Prompt: Firefly </div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Rowdy.jpg" alt="Slide 24">
+    <div class="caption">Day 24 Prompt: Rowdy</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Inferno.jpg" alt="Slide 25">
+    <div class="caption">Day 25 Prompt: Inferno</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Puzzling.jpg" alt="Slide 26">
+    <div class="caption">Day 26 Prompt: Puzzling</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Onion.jpg" alt="Slide 27">
+    <div class="caption">Day 27 Prompt: Onion</div>
+  </div>
+
+
+
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Skeletal.jpg" alt="Slide 28">
+    <div class="caption">Day 28 Prompt: Skeletal</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Lesson.jpg" alt="Slide 29">
+    <div class="caption">Day 29 Prompt: Lesson</div>
+  </div>
+
+
+  
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Vacant.jpg" alt="Slide 30">
+    <div class="caption">Day 30 Prompt: Vacant</div>
+  </div>
+
+   
+  <div class="slide">
+    <img src="img_Inktober_2025/Inktober_Award.jpg" alt="Slide 31">
+    <div class="caption">Day 31 Prompt: Award</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 'slideshow2')">❮</a>
+  <a class="next" onclick="plusSlides(1, 'slideshow2')">❯</a>
+
+
+</div>
+
+
+
+
+
+
+
+<script>
+  const slideIndices = {
+    slideshow1: 0,
+    slideshow2: 0
+  };
+
+  function plusSlides(n, slideshowId) {
+    slideIndices[slideshowId] += n;
+    showSlides(slideshowId);
+  }
+
+  function showSlides(slideshowId) {
+    const container = document.getElementById(slideshowId);
+    const slides = container.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    const index = (slideIndices[slideshowId] + slides.length) % slides.length;
+    slides[index].style.display = "block";
+  }
+
+  // Initialize both slideshows
+  showSlides("slideshow1");
+  showSlides("slideshow2");
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
